@@ -1,8 +1,9 @@
 {
   "name": "pg-word-boundary",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Converting regex word boundaries to PostgreSQL syntax",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "commonjs",
   "devDependencies": {
     "@types/jest": "^27.4.0",
@@ -12,6 +13,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "prepublish": "tsc",
     "test": "jest"
   }
 }
