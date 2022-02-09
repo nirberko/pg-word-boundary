@@ -3,7 +3,7 @@ export default (regex: string): string => {
     throw new Error('Regex value is empty');
   }
 
-  const regexByWordBoundaries = regex.split('\b');
+  const regexByWordBoundaries = regex.split('\\b');
 
   const result = [];
   let firstOccurrence = true;
